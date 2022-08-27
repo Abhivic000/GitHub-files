@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>alert('Welcome to my website');</script>
+    <title>Toppers of CS&E</title>
+    <link rel="icon" href="image/student favico.png">
+    <style>
+      .navbar {
+            background-color: rgb(29, 29, 33);
+            border-radius: 4cm;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: beige;
+        }
+        .search{
+            float: right;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            background-color: rgb(193, 226, 218);
+            border-radius: 4px;
+            padding: 5px;
+            width: 5cm;
+        }
+        .search:hover{
+            background-color: aliceblue;
+        }
+        .navbar li a:hover{
+           color: red;
+        }
+         .container{
+             background-color: rgb(72, 79, 66);
+             border: 3px dotted  rgb(90, 161, 148);
+             padding: 49px;
+             margin: 20px;
+             font-style: italic;
+             text-transform: capitalize;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 34px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 4px;
+            transition: 2s;
+            
+         }
+         body{
+             background: rgb(50, 49, 48);
+         }
+         .inputbox{
+            background-color: rgb(15, 107, 72);
+            color: rgb(67, 5, 5);
+            border-color: rgb(120, 236, 166);
+          
+         }
+         .inputbox2{
+            background-color: rgb(23, 70, 111);
+            border-color: rgb(27, 227, 227);
+         }
+         .inputbox3{
+            background-color: rgb(192, 176, 176)
+         }
+         legend {
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 3px solid rgb(10, 35, 10);
+            background-color:rgb(214, 179, 172);
+            color:white;
+         }
+         form{
+        width: 50%;
+      
+        }
+        .input7{
+            /* padding: 5px;
+            margin: 10px; */
+            font-size:large;
+        }
+        #S1{
+          transition: 2s;
+        }
+
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Cal.php">Services</a></li>
+            <li><a href="#S1">Contact us</a></li>
+        <li><a  href="44_CS&E_Abhishek_Singh.php">Result generator</a></li>
+        <div class="search">
+        
+            <input type="text" name="search" id="search" placeholder="search this site">
+        </div>
+        </ul>
+
+    </nav>
+    </nav>
+</header>
+
+    <div class="container">
+        <h2>What you will get here?</h2>
+        <p>This is list of top 3 students in CS&E branch. Fill the form to get free notes by the toppers.</p>
+    </div>
+    <div class="container">
+        <h2>Table of content.</h2>
+        <table border="5" align="center">
+            <tr class="inputbox2">
+                <th>Roll. No</th>
+                <th>Name</th>
+                <th>GPA</th>
+                <th>Image</th>
+            </tr>
+            <tr class="inputbox">
+                <td>1.</td>
+                <td>Kaushal</td>
+                <td>10.0</td>
+                <td><img src="image/1.topper-removebg-preview.png" width="250" height="150"></td>
+            </tr>
+            <tr class="inputbox2">
+                <td>2.</td>
+                <td>Karan</td>
+                <td>9.9</td>
+                <td><img src="image/2.topper-removebg-preview.png" width="250" height="150"></td>
+            </tr>
+            <tr class="inputbox">
+                <td>3.</td>
+                <td>Magan</td>
+                <td>9.78</td>
+                <td><img src="image/3.topper-removebg-preview.png" width="250" height="150"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+      <div class="input7">
+        <form action="backend2.php"  id="S1" method="post" align="center" >
+          <fieldset>
+            <legend><strong>STUDENT:</strong></legend>
+            <!-- label name means just to click name and you are ready to type -->
+            <h1>Fill this form to get notes from toppers.</h1>
+              <!-- <label for="name"> Name</label> -->
+              <!-- <div > -->
+             <!-- <input placeholder="Write name" type="text" name="myName" id="name"> -->
+            <!-- </div> -->
+          <div>
+              Name: <input   placeholder="Write your name" type="text" name="myName" required>
+          </div>
+            <br>
+            <div>
+              Branch: <input placeholder="Write your Branch"  type="text" name="myBranch" required>
+            </div>
+            <br>
+            <div>
+              Email: <input placeholder="Write your Email" type="email" name="myEmail" required>
+            </div>
+            <br>
+            <div>
+              DOB: <input  type="date" name="myDOB" >
+            </div>
+            <br>
+            <div>
+              Phone No.: <input placeholder="Write your Phone No." type="tel" name="myPhone" required>
+            </div>
+            <br>
+            <div>
+              Are you eligible?: <input  type="checkbox" name="myEligibility" checked required>
+            </div>
+            <br>
+            <div>
+            
+              Gender:  Male <input  type="radio" name="myGender" > Female <input type="radio" name="myGender" required> Other <input type="radio" name="myGender" required>
+            </div>
+            <br>
+            <div>
+           Write about yourself:<br><textarea  name="mytext" cols="40" rows="20" required></textarea>
+            </div>
+            <br>
+            
+            <!-- <select name="lang[]" multiple>
+              <option>choose option</option>
+              <option value="Maths">Maths</option>
+              <option value="Chem">Chem</option>
+              <option value="EPC">EPC</option>
+              <option value="EM">EM</option>
+              
+            </select> -->
+          
+            <br>
+            <div>
+              <input name="submit" type="submit" value="Submit Now">
+              <input type="reset" value="Reset Now">
+            </div>
+            <br>
+            <p>Note: If not from CS&E branch you are not eligible.</p>
+          </fieldset>
+          </form>
+      </div>
+    </div>
+
+</body>
+</html>
